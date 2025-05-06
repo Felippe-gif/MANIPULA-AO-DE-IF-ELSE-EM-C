@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+	int numero;
+	
+	printf("DIGITE UM NUMERO: \n");
+	scanf("%d",&numero);
+	
+	if (numero > 0){
+		printf("POSITIVO \n");
+	}else if (numero < 0){
+		printf("NEGATIVO \n");
+	}else{
+		printf("ZERO \n");
+	}
+}
