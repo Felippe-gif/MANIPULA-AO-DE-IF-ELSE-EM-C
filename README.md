@@ -11,7 +11,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Python
+- Linguagem C
 
 ## 💻 Projeto
 
