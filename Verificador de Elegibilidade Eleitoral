@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int idade;
+    char nacionalidade; // 'B' para brasileiro, 'E' para estrangeiro
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+
+    printf("Você é brasileiro? (Digite 'B' para SIM ou 'E' para NÃO): ");
+    scanf(" %c", &nacionalidade); // Espaço antes do %c para evitar problemas com buffer
+
+    if (nacionalidade == 'B' || nacionalidade == 'b') {
+        if (idade >= 16 && idade < 18 || idade >= 70) {
+            printf("Seu voto é facultativo!\n");
+        } 
+        else if (idade >= 18 && idade < 70) {
+            printf("Seu voto é obrigatório!\n");
+        } 
+        else {
+            printf("Você não pode votar.\n");
+        }
+    } 
+    else {
+        printf("Apenas brasileiros podem votar no Brasil.\n");
+    }
